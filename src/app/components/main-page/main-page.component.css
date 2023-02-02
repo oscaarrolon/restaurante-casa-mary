@@ -27,11 +27,21 @@ img {
     height: 20%;
 }
 
+
+.text {
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
 .buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50%;
 
 
@@ -40,7 +50,7 @@ img {
 button {
     min-width: 130px;
     height: 40px;
-    color: #fff;
+    color: #E19B3C;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -50,7 +60,7 @@ button {
     outline: none;
     border-radius: 5px;
     z-index: 0;
-    background: #fff;
+    background: #E19B3C;
     overflow: hidden;
     border: 2px solid #E19B3C;
     color: black;
@@ -65,9 +75,32 @@ button:after {
     top: 0;
     width: 0;
     height: 100%;
-    background: #E19B3C;
+    background: #fff;
 }
 
 button:hover:after {
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+    img {
+        width: 50%;
+        height: 15%;
+    }
+
+
+    .text {
+        font-size: 15px;
+    }
+
+    .buttons {
+        width: 80%;
+
+    }
+
+    button {
+        min-width: 100px;
+
+    }
 }
