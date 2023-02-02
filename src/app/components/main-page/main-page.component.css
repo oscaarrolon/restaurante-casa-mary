@@ -1,5 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E19B3C;
+    justify-content: space-between;
+}
+
+
+
 #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -8,7 +17,7 @@
 
 
 .content {
-    position: fixed;
+    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     right: 0;
@@ -80,6 +89,13 @@ button:after {
 
 button:hover:after {
     width: 100%;
+}
+
+.aboutUs {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 @media screen and (max-width: 800px) {
