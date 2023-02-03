@@ -1,10 +1,60 @@
-.prueba {
+.aboutUs {
+    display: flex;
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: black;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #fff;
+    color: black;
     top: 100%;
+}
+
+
+.content {
+    margin-top: 5%;
+    display: flex;
+}
+
+.imgAndTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imgAndTxt h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: Special Elite, cursive;
+}
+
+.text {
+    margin: 5%;
+    width: 70%;
+    font-size: 18px;
+    font-family: aboreto, cursive;
+}
+
+.image {
+    margin-left: 25%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 40%;
+    background-image: url('../../../assets/images/restaurante2.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.soloImage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.rightImage {
+    width: 100%;
+    height: 90%;
+    background-image: url('../../../assets/images/restaurante1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
