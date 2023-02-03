@@ -3,11 +3,10 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-image: url('../../../assets/images/fondo-content.avif');
     color: black;
     top: 100%;
 }
-
 
 .content {
 
@@ -16,7 +15,9 @@
 }
 
 .imgAndTxt {
+    margin-top: 5%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -24,6 +25,7 @@
 }
 
 .imgAndTxt h2 {
+    margin-bottom: 5%;
     font-size: 40px;
     text-decoration: underline;
     font-family: Special Elite, cursive;
@@ -32,8 +34,6 @@
 
 .image {
     width: 50%;
-
-
 }
 
 .image img {
@@ -41,18 +41,53 @@
     height: 50%;
     shape-outside: url('../../../assets/images/restaurante12.png');
     shape-image-threshold: 0.5;
-    shape-margin: 20px;
+    shape-margin: 10px;
     float: left;
 }
 
 .image p {
-    text-align: justify;
-    float: right;
-    font-size: 18px;
+    font-size: 15px;
+    margin-left: 3%;
     font-family: aboreto, cursive;
 }
 
+button {
+    margin-top: 3%;
+    float: right;
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #000;
+    overflow: hidden;
+    border: 2px solid #000;
+    color: #fff;
+}
 
+button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+button:hover:after {
+    width: 100%;
+    color: black;
+}
 
 .soloImage {
     width: 40%;
@@ -61,6 +96,7 @@
 }
 
 .rightImage {
+    margin-top: 10%;
     width: 100%;
     height: 90%;
     background-image: url('../../../assets/images/restaurante1.jpeg');
