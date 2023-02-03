@@ -11,6 +11,8 @@
 
 .content {
     margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
     display: flex;
 }
 
@@ -36,13 +38,19 @@
 }
 
 .image {
-    margin-left: 25%;
-    margin-bottom: 5%;
-    width: 70%;
-    height: 40%;
-    background-image: url('../../../assets/images/restaurante2.jpeg');
+    width: 50%;
+    height: 50%;
     background-size: contain;
     background-repeat: no-repeat;
+
+}
+
+.image img {
+
+    width: 100%;
+    height: 100%;
+    shape-outside: circle();
+    clip-path: circle();
 }
 
 .soloImage {
@@ -57,4 +65,29 @@
     background-image: url('../../../assets/images/restaurante1.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .imgAndTxt {
+        width: 100%;
+    }
+
+    .image {
+        width: 70%;
+        height: 60%;
+    }
+
+    .soloImage {
+        width: 100%;
+    }
+
+    .rightImage {
+        width: 100%;
+        height: 50%;
+    }
 }
