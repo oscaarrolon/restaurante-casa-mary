@@ -3,7 +3,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url('../../../assets/images/fondo-content.avif');
+
     color: black;
     top: 100%;
 }
@@ -27,7 +27,6 @@
 .imgAndTxt h2 {
     margin-bottom: 5%;
     font-size: 40px;
-    text-decoration: underline;
     font-family: Special Elite, cursive;
 }
 
@@ -40,7 +39,7 @@
     width: 60%;
     height: 50%;
     shape-outside: url('../../../assets/images/restaurante12.png');
-    shape-image-threshold: 0.5;
+    shape-image-threshold: 0.8;
     shape-margin: 10px;
     float: left;
 }
@@ -51,42 +50,36 @@
     font-family: aboreto, cursive;
 }
 
+
+
 button {
-    margin-top: 3%;
-    float: right;
-    min-width: 130px;
-    height: 40px;
-    padding: 5px 10px;
-    font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
+    align-self: right;
+    background: transparent;
+    padding: .5rem .5rem;
+    margin: 1rem 1rem;
+    transition: all .5s ease;
+    color: #41403E;
+    font-size: 1rem;
+    letter-spacing: 1px;
     outline: none;
-    border-radius: 5px;
-    z-index: 0;
-    background: #000;
-    overflow: hidden;
-    border: 2px solid #000;
-    color: #fff;
+    box-shadow: 15px 30px 28px -22px rgba(0, 0, 0, 0.75);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
-button:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #fff;
 
+
+.lined.thick {
+    border: solid 3px #41403E;
 }
 
-button:hover:after {
-    width: 100%;
-    color: black;
+button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.lined.thick:hover {
+    border: solid 3px var(--primary-color);
 }
 
 .soloImage {
@@ -112,19 +105,26 @@ button:hover:after {
 
     .imgAndTxt {
         width: 100%;
+
     }
 
     .image {
-        width: 70%;
+        width: 60%;
         height: 60%;
     }
 
-    .soloImage {
-        width: 100%;
+    .image p {
+        font-size: 13px;
     }
 
-    .rightImage {
-        width: 100%;
-        height: 50%;
+    button {
+        font-size: 0.8rem;
+
     }
+
+    .soloImage {
+        display: none;
+    }
+
+
 }
