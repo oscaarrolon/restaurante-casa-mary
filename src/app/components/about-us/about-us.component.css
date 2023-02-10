@@ -9,13 +9,12 @@
 }
 
 .content {
-
     margin-bottom: 5%;
     display: flex;
 }
 
 .imgAndTxt {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -36,6 +35,7 @@
 }
 
 .image img {
+    margin-top: 16%;
     width: 60%;
     height: 50%;
     shape-outside: url('../../../assets/images/restaurante12.png');
@@ -45,16 +45,19 @@
 }
 
 .image p {
-    font-size: 15px;
+    font-size: 0.85rem;
     margin-left: 3%;
     font-family: aboreto, cursive;
+}
+
+.btn-leerMas {
+    margin-top: 2rem;
 }
 
 
 
 button {
     cursor: pointer;
-    align-self: right;
     background: transparent;
     padding: .5rem .5rem;
     margin: 1rem 1rem;
@@ -97,34 +100,24 @@ button:hover {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .content {
         flex-direction: column;
-        margin-left: 0;
     }
 
-    .imgAndTxt {
+    .imgAndTxt,
+    .soloImage {
         width: 100%;
-
     }
 
-    .image {
-        width: 60%;
-        height: 60%;
-    }
 
     .image p {
-        font-size: 13px;
+        font-size: 0.75rem;
+        margin-left: 3%;
+        font-family: aboreto, cursive;
     }
 
-    button {
-        font-size: 0.8rem;
-
-    }
-
-    .soloImage {
+    .rightImage {
         display: none;
     }
-
-
 }
