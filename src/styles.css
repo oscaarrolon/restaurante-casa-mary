@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inspiration&family=Special+Elite&family=Work+Sans:ital,wght@0,100;0,600;0,700;0,900;1,200;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,800;1,6..96,400;1,6..96,500;1,6..96,700&display=swap');
+@import url("https://use.typekit.net/qvm0dpt.css");
+
 
 * {
     margin: 0;
@@ -10,4 +12,8 @@
     --primary-color: #E19B3C;
     --secondary-color: #fff;
     --tertiary-color: #000;
+
+    --primary-font: Bodoni Moda, serif;
+    --secondary-font: myriad-pro, sans-serif;
+
 }

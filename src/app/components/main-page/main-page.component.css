@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 
@@ -16,7 +17,7 @@
 
 
 .content {
-    position: absolute;
+    position: fixed;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     right: 0;
@@ -39,7 +40,7 @@ img {
 .text {
     width: 50%;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-weight: lighter;
     text-align: center;
 }

@@ -2,16 +2,18 @@
     display: flex;
     position: absolute;
     width: 100%;
-    height: 100vh;
-
-    color: black;
+    height: 105vh;
+    color: #d2c19f;
     top: 100%;
+    background-color: #3a2d25;
 }
 
 .content {
     margin-bottom: 5%;
     display: flex;
 }
+
+
 
 .imgAndTxt {
     margin-top: 10%;
@@ -47,7 +49,7 @@
 .image p {
     font-size: 0.85rem;
     margin-left: 3%;
-    font-family: aboreto, cursive;
+    font-family: Bodoni Moda, serif;
 }
 
 .btn-leerMas {
@@ -62,11 +64,11 @@ button {
     padding: .5rem .5rem;
     margin: 1rem 1rem;
     transition: all .5s ease;
-    color: #41403E;
+    color: rgba(210, 193, 159, 255);
     font-size: 1rem;
     letter-spacing: 1px;
     outline: none;
-    box-shadow: 15px 30px 28px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 30px 28px -22px rgba(210, 193, 159, 255);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
@@ -98,6 +100,10 @@ button:hover {
     background-image: url('../../../assets/images/restaurante1.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 767px) {
