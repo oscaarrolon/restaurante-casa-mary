@@ -115,12 +115,12 @@ button:hover {
 .rightImage {
     margin-top: 35%;
     margin-bottom: 5%;
-    width: 80%;
-    height: 80%;
-    border-radius: 20%;
-    background-image: url('../../../assets/images/restaurante11.jpeg');
-    background-size: cover;
+    width: 70%;
+    height: 70%;
+    background-image: url('../../../assets/images/restaurante14.png');
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .rightText {
