@@ -3,9 +3,9 @@
     position: absolute;
     width: 100%;
     height: 105vh;
-    color: #d2c19f;
+    color: black;
     top: 100%;
-    background-color: #3a2d25;
+    background: linear-gradient(60deg, var(--secondary-color) 10%, #806454);
 }
 
 .content {
@@ -75,35 +75,40 @@ button {
 
 
 .lined.thick {
-    border: solid 3px #41403E;
+    color: #000;
+    border: solid 3px black;
 }
 
 button:hover {
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: #E19B3C;
 }
 
 .lined.thick:hover {
-    border: solid 3px var(--primary-color);
+    border: solid 3px #E19B3C;
+    color: #E19B3C;
 }
 
 .soloImage {
     width: 40%;
+    margin-right: 5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .rightImage {
-    margin-top: 10%;
-    width: 100%;
-    height: 90%;
-    background-image: url('../../../assets/images/restaurante1.jpeg');
-    background-size: contain;
+    margin-top: 35%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 50%;
+    background-image: url('../../../assets/images/restaurante6.jpeg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.rightText {
+    text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
