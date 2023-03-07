@@ -5,12 +5,27 @@
     height: 105vh;
     color: black;
     top: 100%;
-    background: linear-gradient(60deg, var(--secondary-color) 10%, #806454);
+    background-image: url('../../../assets/images/fondo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.aboutUs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .content {
     margin-bottom: 5%;
     display: flex;
+    z-index: 1;
 }
 
 
@@ -100,9 +115,10 @@ button:hover {
 .rightImage {
     margin-top: 35%;
     margin-bottom: 5%;
-    width: 40%;
-    height: 50%;
-    background-image: url('../../../assets/images/restaurante6.jpeg');
+    width: 80%;
+    height: 80%;
+    border-radius: 20%;
+    background-image: url('../../../assets/images/restaurante11.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }

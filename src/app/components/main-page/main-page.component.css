@@ -8,7 +8,7 @@
 
 
 #myVideo {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -113,5 +113,27 @@ button:hover:after {
     button {
         min-width: 100px;
 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .buttons {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto 5px;
+        min-width: 90px;
     }
 }
