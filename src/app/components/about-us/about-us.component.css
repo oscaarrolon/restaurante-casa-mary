@@ -2,76 +2,38 @@
     display: flex;
     position: absolute;
     width: 100%;
-    height: 105vh;
+    height: 110vh;
     color: black;
     top: 100%;
-    background-image: url('../../../assets/images/fondo1.png');
+    background-image: url('../../../assets/images/fondo-abouUs.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
 
-}
-
-.aboutUs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .content {
+    width: 100%;
     margin-bottom: 5%;
     display: flex;
     z-index: 1;
 }
 
-
-
 .imgAndTxt {
-    margin-top: 10%;
+
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
-}
-
-.imgAndTxt h2 {
-    margin-bottom: 5%;
-    font-size: 40px;
-    font-family: Special Elite, cursive;
-}
-
-
-.image {
     width: 50%;
+
 }
 
-.image img {
-    margin-top: 16%;
-    width: 60%;
-    height: 50%;
-    shape-outside: url('../../../assets/images/restaurante12.png');
-    shape-image-threshold: 0.8;
-    shape-margin: 10px;
-    float: left;
-}
 
-.image p {
-    font-size: 0.85rem;
-    margin-left: 3%;
-    font-family: Bodoni Moda, serif;
-}
 
 .btn-leerMas {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
-
-
 
 button {
     cursor: pointer;
@@ -86,7 +48,6 @@ button {
     box-shadow: 15px 30px 28px -22px rgba(210, 193, 159, 255);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
-
 
 
 .lined.thick {
@@ -105,19 +66,18 @@ button:hover {
 }
 
 .soloImage {
-    width: 40%;
-    margin-right: 5%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .rightImage {
-    margin-top: 35%;
+    margin-top: 40%;
     margin-bottom: 5%;
     width: 70%;
-    height: 70%;
-    background-image: url('../../../assets/images/restaurante14.png');
+    height: 50%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,42 +1,31 @@
 .container {
-    top: 204%;
+    top: 190%;
     width: 100%;
     height: 70vh;
     position: absolute;
-    background-image: url('../../../assets/images/fondo1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom
-}
-
-.container::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 9, 20, 0.9);
+    background-color: red;
 }
 
 .content {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .title {
-
-
     width: 50%;
-    margin-top: 10%;
+
     color: white;
     font-family: var(--primary-font);
     z-index: 1;
-
 }
 
 .titleH1 {
     font-size: 4em;
+}
+
+.pMenu {
+    margin-left: 2%;
 }
 
 .pDe {
@@ -46,4 +35,26 @@
 
 .pDiaActual {
     margin-left: 40%;
+}
+
+.menuImage {
+    width: 50%;
+    height: 80%;
+    z-index: 1;
+}
+
+.rImage {
+    display: flex;
+    justify-content: center;
+
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.rImage img {
+    margin-top: 8%;
+    width: 45%;
+    height: 100%;
 }
