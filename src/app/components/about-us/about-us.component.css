@@ -2,12 +2,11 @@
     display: flex;
     position: absolute;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     color: black;
     top: 100%;
-    background-image: url('../../../assets/images/fondo-abouUs.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: aliceblue;
+    font-family: var(--primary-font);
 
 }
 
@@ -19,16 +18,47 @@
 }
 
 .imgAndTxt {
-
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.perspective {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.imgAndTxt img {
+    width: 80%;
+    height: 100%;
+}
+
+.imgAndTxt .text {
+    margin-top: -30%;
+    width: 100%;
+    line-height: 1;
+    font-style: var(--primary-font);
+}
+
+.imgAndTxt .text .sobre {
+    margin-left: 15%;
+    font-size: 4.44rem;
 
 }
 
+.imgAndTxt .text .nosotros {
+    margin-top: -2.7%;
+    margin-left: 20%;
+    font-size: 500%;
+    color: #E19B3C;
+
+
+}
 
 
 .btn-leerMas {
@@ -67,44 +97,178 @@ button:hover {
 
 .soloImage {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: #E19B3C;
+    font-family: var(--secondary-font);
 }
 
-.rightImage {
+.rightImage img {
     margin-top: 40%;
-    margin-bottom: 5%;
-    width: 70%;
+    width: 100%;
     height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 .rightText {
+    margin-top: -15%;
+    width: 65%;
     text-align: center;
+    font-size: .8rem;
 }
 
-@media only screen and (max-width: 767px) {
-    .content {
-        flex-direction: column;
-    }
 
-    .imgAndTxt,
-    .soloImage {
+
+@media only screen and (max-device-width: 360px) {
+    .aboutUs {
         width: 100%;
     }
 
 
-    .image p {
-        font-size: 0.75rem;
-        margin-left: 3%;
-        font-family: aboreto, cursive;
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .rightImage {
-        display: none;
+    .imgAndTxt {
+        width: 100%;
+        height: 50%;
     }
+
+    .perspective {
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .imgAndTxt .text {
+        margin-top: -90%;
+    }
+
+    .imgAndTxt .text .sobre {
+        margin-left: 0;
+        font-size: 2.44rem;
+    }
+
+    .imgAndTxt .text .nosotros {
+        margin-left: 0;
+        font-size: 300%;
+    }
+
+    .soloImage {
+        width: 100%;
+        height: 50%;
+    }
+
+    .rightImage img {
+        margin-top: 10%;
+        width: 70%;
+        height: 50%;
+    }
+
+    .rightText {
+        width: 70%;
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 903px) {
+    .aboutUs {
+        flex-direction: column;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .imgAndTxt {
+        width: 100%;
+        height: 100%;
+    }
+
+    .perspective {
+        width: 80%;
+        height: 70%;
+    }
+
+    .imgAndTxt img {
+        margin-left: 10%;
+    }
+
+
+    .imgAndTxt .text {
+        margin-top: -55%;
+    }
+
+    .imgAndTxt .text .sobre {
+        margin-left: 5%;
+        font-size: 4.44rem;
+    }
+
+    .imgAndTxt .text .nosotros {
+        margin-left: 20%;
+        font-size: 500%;
+    }
+
+    .soloImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rightImage img {
+        margin-top: 40%;
+        width: 90%;
+        height: 50%;
+    }
+
+    .rightText {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-device-width: 815px) {
+
+    .imgAndTxt .text .sobre {
+        margin-left: 5%;
+        font-size: 3.44rem;
+    }
+
+    .imgAndTxt .text .nosotros {
+        margin-left: 20%;
+        font-size: 4rem;
+    }
+
+}
+
+
+
+@media only screen and (max-device-width: 645px) {
+    .aboutUs {
+        height: 150vh;
+    }
+
+    .content {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .imgAndTxt {
+        height: 100%;
+    }
+
+
+    .imgAndTxt .text .sobre {
+        margin-left: 5%;
+        font-size: 2.44rem;
+    }
+
+    .imgAndTxt .text .nosotros {
+        margin-left: 20%;
+        font-size: 3rem;
+    }
+
 }
