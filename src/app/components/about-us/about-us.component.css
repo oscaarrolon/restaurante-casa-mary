@@ -3,63 +3,41 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    color: black;
-    top: 100%;
-    background-color: aliceblue;
-    font-family: var(--primary-font);
-
+    top: 112%;
 }
 
-.content {
-    width: 100%;
-    margin-bottom: 5%;
-    display: flex;
-    z-index: 1;
+.content img {
+    max-width: 50%;
+    max-height: auto;
 }
 
-.imgAndTxt {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: aliceblue;
+.leftDiv {
+    background-color: white;
 }
 
-.perspective {
-    position: relative;
-    width: 80%;
-    height: 80%;
+.text-center {
+    margin-top: -15%;
+    font-size: 4rem;
 }
 
-.imgAndTxt img {
-    width: 80%;
-    height: 100%;
+.sobre {
+    margin-left: -40%;
 }
 
-.imgAndTxt .text {
-    margin-top: -30%;
-    width: 100%;
-    line-height: 1;
-    font-style: var(--primary-font);
-}
-
-.imgAndTxt .text .sobre {
-    margin-left: 15%;
-    font-size: 4.44rem;
-
-}
-
-.imgAndTxt .text .nosotros {
-    margin-top: -2.7%;
+.nosotros {
+    margin-top: -6%;
     margin-left: 20%;
-    font-size: 500%;
-    color: #E19B3C;
-
-
 }
 
+.rightDiv {
+    background-color: #E19B3C;
+}
+
+.rightText {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10%;
+}
 
 .btn-leerMas {
     margin-top: 1rem;
@@ -79,7 +57,6 @@ button {
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
-
 .lined.thick {
     color: #000;
     border: solid 3px black;
@@ -95,180 +72,9 @@ button:hover {
     color: #E19B3C;
 }
 
-.soloImage {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E19B3C;
-    font-family: var(--secondary-font);
-}
 
-.rightImage img {
-    margin-top: 40%;
-    width: 100%;
-    height: 50%;
-
-}
-
-.rightText {
-    margin-top: -15%;
-    width: 65%;
-    text-align: center;
-    font-size: .8rem;
-}
-
-
-
-@media only screen and (max-device-width: 360px) {
-    .aboutUs {
-        width: 100%;
-    }
-
-
-    .content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgAndTxt {
-        width: 100%;
-        height: 50%;
-    }
-
-    .perspective {
-        width: 50%;
-        height: 50%;
-
-    }
-
-    .imgAndTxt .text {
-        margin-top: -90%;
-    }
-
-    .imgAndTxt .text .sobre {
-        margin-left: 0;
-        font-size: 2.44rem;
-    }
-
-    .imgAndTxt .text .nosotros {
-        margin-left: 0;
-        font-size: 300%;
-    }
-
-    .soloImage {
-        width: 100%;
-        height: 50%;
-    }
-
-    .rightImage img {
-        margin-top: 10%;
-        width: 70%;
-        height: 50%;
-    }
-
-    .rightText {
-        width: 70%;
-        font-size: 0.5rem;
-    }
-}
-
-@media only screen and (max-device-width: 903px) {
+@media (min-width: 768px) {
     .aboutUs {
         flex-direction: column;
     }
-
-    .content {
-        height: 100%;
-    }
-
-    .imgAndTxt {
-        width: 100%;
-        height: 100%;
-    }
-
-    .perspective {
-        width: 80%;
-        height: 70%;
-    }
-
-    .imgAndTxt img {
-        margin-left: 10%;
-    }
-
-
-    .imgAndTxt .text {
-        margin-top: -55%;
-    }
-
-    .imgAndTxt .text .sobre {
-        margin-left: 5%;
-        font-size: 4.44rem;
-    }
-
-    .imgAndTxt .text .nosotros {
-        margin-left: 20%;
-        font-size: 500%;
-    }
-
-    .soloImage {
-        width: 100%;
-        height: 100%;
-    }
-
-    .rightImage img {
-        margin-top: 40%;
-        width: 90%;
-        height: 50%;
-    }
-
-    .rightText {
-        width: 90%;
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-device-width: 815px) {
-
-    .imgAndTxt .text .sobre {
-        margin-left: 5%;
-        font-size: 3.44rem;
-    }
-
-    .imgAndTxt .text .nosotros {
-        margin-left: 20%;
-        font-size: 4rem;
-    }
-
-}
-
-
-
-@media only screen and (max-device-width: 645px) {
-    .aboutUs {
-        height: 150vh;
-    }
-
-    .content {
-        flex-direction: column;
-        height: 150vh;
-    }
-
-    .imgAndTxt {
-        height: 100%;
-    }
-
-
-    .imgAndTxt .text .sobre {
-        margin-left: 5%;
-        font-size: 2.44rem;
-    }
-
-    .imgAndTxt .text .nosotros {
-        margin-left: 20%;
-        font-size: 3rem;
-    }
-
 }
