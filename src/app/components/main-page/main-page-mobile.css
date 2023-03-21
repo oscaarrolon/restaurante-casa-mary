@@ -1,0 +1,63 @@
+/* Media Queries para moviles pequeños */
+
+@media only screen and (max-width: 250px) {
+
+    .container {
+        width: 30%;
+
+    }
+
+    .content {
+        margin-top: -50%;
+    }
+
+    img {
+        width: 10%;
+        height: 5%;
+    }
+
+    button {
+        width: 40px;
+
+        padding: 1px 3px;
+        margin: 10px;
+    }
+
+    .aboutUs {
+        width: 80%;
+    }
+}
+
+/* Media Queries para móviles */
+@media only screen and (max-width: 480px) {
+
+    .container {
+        width: 50%;
+    }
+
+    img {
+        width: 15%;
+        height: 10%;
+    }
+
+}
+
+/* Media Queries para tablets */
+@media only screen and (max-width: 768px) {
+
+
+    .container {
+        width: 70%;
+    }
+
+    img {
+        width: 20%;
+        height: 15%;
+    }
+
+
+
+    .aboutUs {
+        width: 80%;
+    }
+}

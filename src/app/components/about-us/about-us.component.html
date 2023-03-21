@@ -1,25 +1,11 @@
-<div class="container col-md-12 aboutUs">
+<div class="container-fluid aboutUs">
     <div class="row content">
-        <div class="col-md-6 col-sm-12 leftDiv">
-            <div class="leftImage text-center">
-                <img src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
-            </div>
-            <div class="text">
-                <h1 class="text-uppercase text-center">
-                    <p class="text-black sobre">SOBRE</p>
-                    <p class="text-warning text-right nosotros">NOSOTROS</p>
-                </h1>
-            </div>
-            <div class="btn-leerMas">
-                <button class="btn btn-primary">Reservar</button>
-            </div>
-        </div>
         <div class="col-md-6 col-sm-12 rightDiv">
             <div class="rightImage text-center" [ngStyle]="{ 'margin-top.px': finalPosition, 'transition': '1s' }"
                 (window:scroll)="onScroll()">
                 <img src="../../../assets/images/dueños.png" alt="" class="img-fluid">
             </div>
-            <div class="rightText text-sm ">
+            <div class="rightText">
                 <p>
                     Bienvenido a Casa Mary, un restaurante familiar regentado por dos cuñados con visión emprendedora,
                     Pedro y Mª José. Con más de 20 años de experiencia culinaria, decidieron unir fuerzas para ofrecer
@@ -38,5 +24,20 @@
                 </p>
             </div>
         </div>
+        <div class="leftDiv col-6">
+            <div class="leftImage" (window:scroll)="onScrollButton()">
+                <img src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
+            </div>
+            <div [ngClass]="{'oculto': oculto}">
+                <h1 class="text-uppercase text-center">
+                    <p class="text-black sobre">SOBRE</p>
+                    <p class="text-warning text-right nosotros">NOSOTROS</p>
+                </h1>
+            </div>
+            <div class="btn-leerMas" [ngClass]="{'oculto': oculto}" (window:scroll)="onScrollButton()">
+                <button class="btn btn-primary">Reservar</button>
+            </div>
+        </div>
+
     </div>
 </div>

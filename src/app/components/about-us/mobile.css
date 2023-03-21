@@ -1,0 +1,22 @@
+@media only screen and (max-width: 250px) {
+    .leftDiv {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .leftDiv {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .leftDiv {
+        width: 100%;
+    }
+
+    .rightImage {
+        margin-top: -80px;
+    }
+}

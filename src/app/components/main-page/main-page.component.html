@@ -1,37 +1,38 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="video">
-                <video id="myVideo">
-                    <source src="../../../assets/videos/Video-restaurante2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="content">
-                <img src="../../../assets/images/logo-casaMary(3).png" alt="logo-casaMary">
-                <div class="text">
-                    <p>
-                        Descubre la auténtica riqueza de la gastronomía local en nuestro restaurante. Degusta los
-                        arroces alicantinos, preparados con ingredientes frescos y auténticos. Ven y experimenta la
-                        verdadera esencia de Alicante en un ambiente acogedor y sofisticado. ¡Bienvenido a la verdadera
-                        gastronomía de la Terreta!
-                    </p>
-                </div>
-                <div class="buttons">
-                    <button class="btn btn-primary carta">CARTA</button>
-                    <button class="btn btn-primary menú-diario">Menú Diario</button>
-                    <button class="btn btn-primary reserva">RESERVA</button>
-                </div>
-            </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+<div class="row">
+    <div>
+        <div class="video">
+            <video id="myVideo">
+                <source src="../../../assets/videos/Video-restaurante2.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
-    <div class="row col-md-12">
-        <div class="col-md-12">
-            <about-us></about-us>
+    <div class="col-6">
+        <div class="content" [ngClass]="{'oculto': oculto}">
+            <img src="../../../assets/images/logo-casaMary(3).png" alt="logo-casaMary"
+                class=" animate__animated animate__fadeInDown">
+            <div class="text" (window:scroll)="onScrollButton()">
+                <p class=" animate__animated animate__fadeInDown">
+                    Descubre la auténtica riqueza de la gastronomía local en nuestro restaurante. Degusta los
+                    arroces alicantinos, preparados con ingredientes frescos y auténticos. Ven y experimenta la
+                    verdadera esencia de Alicante en un ambiente acogedor y sofisticado. ¡Bienvenido a la verdadera
+                    gastronomía de la Terreta!
+                </p>
+            </div>
+            <div class="buttons  animate__animated animate__fadeInDown">
+                <button class="carta">CARTA</button>
+                <button class="menú-diario">Menú Diario</button>
+                <button class="reserva">RESERVA</button>
+            </div>
         </div>
-        <!-- <div class="col-md-12">
-            <menu-diario></menu-diario>
-        </div> -->
     </div>
 </div>
+<div>
+    <div class="componentsSection">
+        <about-us></about-us>
+    </div>
+</div>
+
+<!-- <menu-diario></menu-diario>  -->
