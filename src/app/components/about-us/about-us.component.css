@@ -27,7 +27,7 @@
 
 .text-center {
     margin-top: -15%;
-    font-size: clamp(30px, 70%, 90px);
+    font-size: clamp(30px, 70%, 120px);
 
 
 }
