@@ -11,10 +11,12 @@
     grid-row-gap: 0px;
 
 
+
 }
 
 .images img {
     max-height: 100%;
     max-width: 100%;
     padding: 5%;
+
 }

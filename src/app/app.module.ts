@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MenuDiarioComponent } from './components/menu-diario/menu-diario.component';
+import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { MenuDiarioComponent } from './components/menu-diario/menu-diario.compon
     MainPageComponent,
     AboutUsComponent,
     MenuDiarioComponent,
+    VerMenuComponent,
   ],
   imports: [
     BrowserModule,
