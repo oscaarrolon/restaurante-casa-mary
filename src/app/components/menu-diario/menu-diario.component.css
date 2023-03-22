@@ -1,60 +1,19 @@
 .container {
-    top: 190%;
-    width: 100%;
-    height: 70vh;
+    top: 202%;
+    width: 80%;
+    height: 30vh;
     position: absolute;
-    background-color: red;
+
 }
 
-.content {
-    display: flex;
-    width: 100%;
+.container .row {
     height: 100%;
 }
 
-.title {
-    width: 50%;
-
-    color: white;
-    font-family: var(--primary-font);
-    z-index: 1;
+.container .leftCont {
+    background-color: rgba(254, 162, 1, 0.8);
 }
 
-.titleH1 {
-    font-size: 4em;
-}
-
-.pMenu {
-    margin-left: 2%;
-}
-
-.pDe {
-    margin-left: 20%;
-
-}
-
-.pDiaActual {
-    margin-left: 40%;
-}
-
-.menuImage {
-    width: 50%;
-    height: 80%;
-    z-index: 1;
-}
-
-.rImage {
-    display: flex;
-    justify-content: center;
-
-    overflow: visible;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.rImage img {
-    margin-top: 8%;
-    width: 45%;
-    height: 100%;
+.container .rightCont {
+    background-color: rgba(255, 110, 78, 0.8);
 }

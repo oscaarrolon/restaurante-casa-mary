@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'menu-diario',
   templateUrl: './menu-diario.component.html',
-  styleUrls: ['./menu-diario.component.css']
+  styleUrls: ['./menu-diario.component.css', './menu-diario-mobile.css']
 })
 export class MenuDiarioComponent implements OnInit {
 

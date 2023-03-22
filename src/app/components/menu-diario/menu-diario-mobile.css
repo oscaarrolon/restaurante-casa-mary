@@ -1,0 +1,22 @@
+@media only screen and (max-width: 250px) {
+    .container {
+        top: 250%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        top: 250%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        top: 259%;
+        height: 80vh;
+    }
+}
+
+@media only screen and (width: 820px) and (height: 1180px) {}
+
+@media only screen and (width: 768px) and (height: 1024px) {}
