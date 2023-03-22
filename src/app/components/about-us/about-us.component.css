@@ -1,10 +1,7 @@
 .aboutUs {
     display: flex;
-    position: absolute;
-    width: 80%;
     height: 90vh;
-    top: 112%;
-
+    margin-top: 115vh;
 }
 
 .content img {

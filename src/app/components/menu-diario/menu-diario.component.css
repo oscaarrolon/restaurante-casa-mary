@@ -1,19 +1,4 @@
-.container {
-    top: 202%;
-    width: 80%;
-    height: 30vh;
-    position: absolute;
-
-}
-
-.container .row {
-    height: 100%;
-}
-
-.container .leftCont {
-    background-color: rgba(254, 162, 1, 0.8);
-}
-
-.container .rightCont {
-    background-color: rgba(255, 110, 78, 0.8);
+.wrapper {
+    height: 60vh;
+    background-color: white;
 }

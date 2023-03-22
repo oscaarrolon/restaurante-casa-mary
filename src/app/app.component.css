@@ -4,6 +4,7 @@
     bottom: 0;
     min-height: 100%;
     overflow-x: hidden;
+    z-index: -100;
 }
 
 
@@ -20,6 +21,7 @@
     align-items: center;
     justify-content: center;
     transition: 3s;
+    z-index: -1;
 
 }
 
