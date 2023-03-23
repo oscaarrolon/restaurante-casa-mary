@@ -1,5 +1,5 @@
 .wrapper {
-    height: 59vh;
+
     background-color: white;
 }
 
@@ -9,6 +9,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
+    max-height: 100%;
 
 }
 
@@ -16,6 +17,7 @@
     max-height: 100%;
     max-width: 100%;
     transition: 2s;
+    padding: 2%;
 
 }
 
