@@ -18,10 +18,7 @@
     padding: 2%;
 }
 
-.animado {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
+
 
 .mostrarDesdeAbajo {
     animation: mostrarDesdeAbajo 1s;

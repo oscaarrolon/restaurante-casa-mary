@@ -25,7 +25,7 @@ export class AboutUsComponent {
   onScroll() {
     this.scrolled = window.scrollY;
     if (this.scrolled >= 600) {
-      this.finalPosition = 10;
+      this.finalPosition = 100;
     }
     else { this.finalPosition = -70 }
 
