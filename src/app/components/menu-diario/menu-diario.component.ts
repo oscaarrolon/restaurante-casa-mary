@@ -9,11 +9,11 @@ export class MenuDiarioComponent implements OnInit {
 
   scroll: number
   animado: boolean
-  opacity: string
+  opacity: number
   constructor() {
     this.scroll = 0
     this.animado = false
-    this.opacity = '0'
+    this.opacity = 0
 
   }
   ngOnInit() {
@@ -23,9 +23,13 @@ export class MenuDiarioComponent implements OnInit {
     this.scroll = window.scrollY;
     if (this.scroll >= 950) {
       this.animado = true
-      this.opacity = '1'
+      this.opacity = 1
     }
-    else this.animado = false
-    this.opacity = '0'
+    else {
+      this.animado = false
+      this.opacity = 0
+    }
+    console.log(this.opacity)
   }
+
 }
