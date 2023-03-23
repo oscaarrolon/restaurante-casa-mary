@@ -25,10 +25,10 @@
             </div>
         </div>
         <div class="leftDiv col-6">
-            <div class="leftImage" (window:scroll)="onScrollButton()">
+            <div class="leftImage">
                 <img src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
             </div>
-            <div [ngClass]="{'oculto': oculto}">
+            <div [ngClass]="{'oculto': oculto}" (window:scroll)="onScrollButton()">
                 <h1 class="text-uppercase text-center">
                     <p class="text-black sobre">SOBRE</p>
                     <p class="text-warning text-right nosotros">NOSOTROS</p>

@@ -1,14 +1,14 @@
 <div class="wrapper">
     <div class="images-parent">
         <div class="images">
-            <div class="image1">
-                <img src="../../../assets/images/restaurante9.jpeg" alt="">
+            <div class="image1 " [ngClass]="{'animado': animado, 'mostrarDesdeIzquierda': animado}">
+                <img src="../../../assets/images/restaurante9.jpeg" (window:scroll)="onScroll()" alt="">
             </div>
-            <div class="image2">
-                <img src="../../../assets/images/imagen2.jpeg" alt="">
+            <div class="image2 " [ngClass]="{'animado': animado, 'mostrarDesdeAbajo': animado}">
+                <img src="../../../assets/images/imagen2.jpeg" (window:scroll)="onScroll()" alt="">
             </div>
-            <div class="image3">
-                <img src="../../../assets/images/imagen3.jpeg" alt="">
+            <div class="image3 " [ngClass]="{'animado': animado, 'mostrarDesdeDerecha': animado}">
+                <img src="../../../assets/images/imagen3.jpeg" (window:scroll)="onScroll()" alt="">
             </div>
         </div>
     </div>

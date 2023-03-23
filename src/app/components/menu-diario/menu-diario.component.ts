@@ -7,20 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuDiarioComponent implements OnInit {
 
-  dia: Date
-  semana: Object
-  diaActual: String
-  diaActualUpper: string
-  constructor() {
-    this.dia = new Date()
-    this.semana = { weekday: 'long' }
-    this.diaActual = this.dia.toLocaleDateString('es-ES', this.semana)
-    this.diaActualUpper = this.diaActual.toUpperCase()
-  }
+  scroll: number
+  animado: boolean
 
+  constructor() {
+    this.scroll = 0
+    this.animado = false
+
+  }
   ngOnInit() {
 
+  }
+  onScroll() {
+    this.scroll = window.scrollY;
+    if (this.scroll >= 950) {
+      this.animado = true
+    }
+    else this.animado = false
+    console.log(this.scroll)
 
   }
-
 }

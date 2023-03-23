@@ -8,6 +8,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MenuDiarioComponent } from './components/menu-diario/menu-diario.component';
 import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -22,6 +23,8 @@ import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    LazyLoadImageModule
+
 
   ],
   providers: [

@@ -1,5 +1,5 @@
 .wrapper {
-    height: 75vh;
+    height: 59vh;
     background-color: white;
 }
 
@@ -10,13 +10,57 @@
     grid-column-gap: 15px;
     grid-row-gap: 0px;
 
-
-
 }
 
 .images img {
     max-height: 100%;
     max-width: 100%;
-    padding: 5%;
+    padding: 2%;
+}
 
+.animado {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.mostrarDesdeAbajo {
+    animation: mostrarDesdeAbajo 1s;
+}
+
+.mostrarDesdeDerecha {
+    animation: mostrarDesdeDerecha 1s;
+}
+
+.mostrarDesdeIzquierda {
+    animation: mostrarDesdeIzquierda 1s;
+}
+
+@keyframes mostrarDesdeAbajo {
+    0% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mostrarDesdeDerecha {
+    0% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes mostrarDesdeIzquierda {
+    0% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
