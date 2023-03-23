@@ -38,7 +38,6 @@ img {
 
 .text {
     width: 50%;
-
     font-family: var(--primary-font);
     font-weight: lighter;
     text-align: center;
@@ -55,8 +54,6 @@ img {
     align-items: center;
     justify-content: space-around;
     width: 80%;
-
-
 }
 
 button {
@@ -92,8 +89,4 @@ button:after {
 
 button:hover:after {
     width: 100%;
-}
-
-.componentsSection {
-    margin-left: 10%;
 }

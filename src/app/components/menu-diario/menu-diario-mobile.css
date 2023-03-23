@@ -2,7 +2,34 @@
 
 @media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 0px;
+
+    }
+
+    .image1 {
+        height: 30vh;
+        margin-top: 3%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .image2 {
+        height: 30vh;
+        margin: 3%;
+    }
+
+    .image3 {
+        height: 30vh;
+        margin-bottom: 3%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
 
 @media only screen and (width: 820px) and (height: 1180px) {}
 

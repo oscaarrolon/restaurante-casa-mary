@@ -21,7 +21,7 @@ export class MenuDiarioComponent implements OnInit {
   }
   onScroll() {
     this.scroll = window.scrollY;
-    if (this.scroll >= 950) {
+    if (this.scroll >= 750) {
       this.animado = true
       this.opacity = 1
     }

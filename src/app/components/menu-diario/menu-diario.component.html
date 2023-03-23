@@ -1,16 +1,14 @@
 <div class="wrapper">
     <div class="images-parent">
         <div class="images">
-            <div class="image1" [ngClass]="{'mostrarDesdeIzquierda': animado}" [ngStyle]="{'opacity': opacity}">
-                <img src="../../../assets/images/restaurante9.jpeg" (window:scroll)="onScroll()" alt="">
+            <div class="image1" [ngClass]="{'mostrarDesdeIzquierda': animado}" [ngStyle]="{'opacity': opacity}"
+                (window:scroll)="onScroll()">
             </div>
-            <div class="image2 " [ngClass]="{'mostrarDesdeAbajo': animado}">
-                <img src="../../../assets/images/imagen2.jpeg" (window:scroll)="onScroll()"
-                    [ngStyle]="{'opacity': opacity}" alt="">
+            <div class="image2" [ngClass]="{'mostrarDesdeAbajo': animado}" (window:scroll)="onScroll()"
+                [ngStyle]="{'opacity': opacity}">
             </div>
-            <div class="image3 " [ngClass]="{'mostrarDesdeDerecha': animado}">
-                <img src="../../../assets/images/imagen3.jpeg" (window:scroll)="onScroll()"
-                    [ngStyle]="{'opacity': opacity}" alt="">
+            <div class="image3" [ngClass]="{'mostrarDesdeDerecha': animado}" (window:scroll)="onScroll()"
+                [ngStyle]="{'opacity': opacity}">
             </div>
         </div>
     </div>

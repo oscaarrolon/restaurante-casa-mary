@@ -6,10 +6,13 @@
 @media only screen and (max-width: 767px) {
     .about-Us {
         flex-direction: column;
+
     }
 
     .leftDiv {
         width: 100%;
+        justify-content: flex-start;
+
     }
 
     .leftImage {
@@ -24,6 +27,9 @@
     .btn-leerMas {
         margin-top: 0;
     }
+
+
+
 
 }
 

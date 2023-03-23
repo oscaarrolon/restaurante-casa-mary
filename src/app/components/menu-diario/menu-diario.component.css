@@ -1,26 +1,55 @@
+/* sets the height and background color of the wrapper */
 .wrapper {
-
+    height: 60vh;
     background-color: white;
 }
 
+/* sets the height of the images parent container to 100% */
+.images-parent {
+    height: 100%;
+
+}
+
+/* sets the grid display and spacing for the images */
 .images {
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
-    max-height: 100%;
+}
+
+/* sets the background images for each image div */
+.image1 {
+    background-image: url(../../../assets/images/restaurante9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 58vh;
+    margin-top: 2%;
+}
+
+.image2 {
+    background-image: url(../../../assets/images/imagen2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 58vh;
+    margin-top: 2%;
 
 }
 
-.images img {
-    max-height: 100%;
-    max-width: 100%;
-    transition: 2s;
-    padding: 2%;
+.image3 {
+    background-image: url(../../../assets/images/imagen3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 58vh;
+    margin-top: 2%;
 
 }
 
+
+
+/* sets animation rules for general entrance from different directions */
 .mostrarDesdeAbajo {
     animation: mostrarDesdeAbajo 1s;
 }
@@ -33,6 +62,7 @@
     animation: mostrarDesdeIzquierda 1s;
 }
 
+/* sets animation keys to specify the start and end transformations of the element */
 @keyframes mostrarDesdeAbajo {
     0% {
         transform: translateY(150px);
