@@ -17,10 +17,15 @@
 
 /* For devices up to 768px width */
 @media only screen and (max-width: 768px) {
+
+    .wrapper {
+        height: 90vh;
+    }
+
     .images {
         display: flex;
         flex-direction: column;
-        height: 200%;
+        height: 100%;
         justify-content: center;
         text-align: center;
     }
@@ -40,15 +45,3 @@
 
 /* For specific device width and height */
 @media only screen and (width: 768px) and (height: 1024px) {}
-
-
-/* Changes made are as follows:
-
-1. Replaced `grid-template-rows` with `grid-row-gap` to better control the height and gaps between rows.
-2. Added `display: grid;` to `.images` so that it behaves as a grid container.
-3. Combined `.image1`, `.image2`, and `.image3` selectors to apply the same styles to each element. 
-4. Added `animation-duration: 0.5s;` and `animation-fill-mode: both;` to `.image1`, `.image2`, and `.image3` to control animation properties. 
-5. Simplified `margin` property for `.image1`, `.image2`, and `.image3` using shorthand. 
-6. Renamed `grid-column-gap` to `grid-row-gap` for `.images` selector.
-7. Renamed `mostrarDesdeArriba` to `mostrarDesdeAbajo` for `.image2` animation.
-8. Reordered the `from` and `to` declarations for each animation. */

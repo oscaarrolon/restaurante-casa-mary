@@ -1,7 +1,7 @@
 /* sets the height and background color of the wrapper */
 .wrapper {
     height: 60vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* sets the height of the images parent container to 100% */

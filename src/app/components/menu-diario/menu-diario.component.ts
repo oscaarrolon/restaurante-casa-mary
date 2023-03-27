@@ -10,7 +10,7 @@ export class MenuDiarioComponent implements OnInit {
   animado = false;
   opacity = 0;
   elementIds = ['my-image1', 'my-image2', 'my-image3'];
-  scrollThresholds = [990, 1200, 900];
+  scrollThresholds = [990, 1200, 90];
 
   constructor() { }
 
@@ -32,9 +32,6 @@ export class MenuDiarioComponent implements OnInit {
           this.animado = false;
           this.opacity = 0;
         }
-
-
-
       }
     }
   }
