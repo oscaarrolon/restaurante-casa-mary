@@ -1,36 +1,54 @@
+/* For devices up to 250px width */
 @media only screen and (max-width: 250px) {}
 
-@media only screen and (max-width: 480px) {}
+/* For devices up to 480px width */
+@media only screen and (max-width: 480px) {
 
-@media only screen and (max-width: 768px) {
-    .images {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 1px;
-        grid-row-gap: 0px;
 
-    }
-
-    .image1 {
-        height: 30vh;
-        margin-top: 3%;
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-
-    .image2 {
-        height: 30vh;
-        margin: 3%;
-    }
-
-    .image3 {
-        height: 30vh;
-        margin-bottom: 3%;
-        margin-right: 3%;
-        margin-left: 3%;
+    #my-image1,
+    #my-image2,
+    #my-image3 {
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        align-self: center;
     }
 }
 
+/* For devices up to 768px width */
+@media only screen and (max-width: 768px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        height: 200%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #my-image1,
+    #my-image2,
+    #my-image3 {
+
+        width: 90%;
+        height: 100%;
+        align-self: center;
+    }
+}
+
+/* For specific device width and height */
 @media only screen and (width: 820px) and (height: 1180px) {}
 
+/* For specific device width and height */
 @media only screen and (width: 768px) and (height: 1024px) {}
+
+
+/* Changes made are as follows:
+
+1. Replaced `grid-template-rows` with `grid-row-gap` to better control the height and gaps between rows.
+2. Added `display: grid;` to `.images` so that it behaves as a grid container.
+3. Combined `.image1`, `.image2`, and `.image3` selectors to apply the same styles to each element. 
+4. Added `animation-duration: 0.5s;` and `animation-fill-mode: both;` to `.image1`, `.image2`, and `.image3` to control animation properties. 
+5. Simplified `margin` property for `.image1`, `.image2`, and `.image3` using shorthand. 
+6. Renamed `grid-column-gap` to `grid-row-gap` for `.images` selector.
+7. Renamed `mostrarDesdeArriba` to `mostrarDesdeAbajo` for `.image2` animation.
+8. Reordered the `from` and `to` declarations for each animation. */

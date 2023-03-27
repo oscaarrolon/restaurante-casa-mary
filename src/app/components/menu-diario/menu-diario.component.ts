@@ -6,30 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-diario.component.css', './menu-diario-mobile.css']
 })
 export class MenuDiarioComponent implements OnInit {
+  scroll = 0;
+  animado = false;
+  opacity = 0;
+  elementIds = ['my-image1', 'my-image2', 'my-image3'];
+  scrollThresholds = [990, 1200, 900];
 
-  scroll: number
-  animado: boolean
-  opacity: number
-  constructor() {
-    this.scroll = 0
-    this.animado = false
-    this.opacity = 0
+  constructor() { }
 
-  }
-  ngOnInit() {
+  ngOnInit() { }
 
-  }
   onScroll() {
     this.scroll = window.scrollY;
-    if (this.scroll >= 750) {
-      this.animado = true
-      this.opacity = 1
-    }
-    else {
-      this.animado = false
-      this.opacity = 0
-    }
-    console.log(this.opacity)
-  }
+    for (let i = 0; i < this.elementIds.length; i++) {
+      const elementId = this.elementIds[i];
+      const element = document.getElementById(elementId);
+      if (element) {
+        const elementOffset = element.offsetTop;
+        const elementHeight = element.offsetHeight;
+        const scrollThreshold = this.scrollThresholds[i];
+        if (this.scroll >= scrollThreshold) {
+          this.animado = true;
+          this.opacity = 1;
+        } else {
+          this.animado = false;
+          this.opacity = 0;
+        }
 
+
+
+      }
+    }
+  }
 }

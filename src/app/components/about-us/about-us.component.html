@@ -3,7 +3,7 @@
         <div class="col-md-6 col-sm-12 rightDiv">
             <div class="rightImage text-center" [ngStyle]="{ 'margin-top.px': finalPosition, 'transition': '1s' }"
                 (window:scroll)="onScroll()">
-                <img src="../../../assets/images/dueños.png" alt="" class="img-fluid">
+                <img loading="lazy" src="../../../assets/images/dueños.png" alt="" class="img-fluid">
             </div>
             <div class="rightText">
                 <p>
@@ -18,7 +18,7 @@
         </div>
         <div class="leftDiv col-6">
             <div class="leftImage">
-                <img src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
+                <img loading="lazy" src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
             </div>
             <div [ngClass]="{'oculto': oculto}" (window:scroll)="onScrollButton()">
                 <h2 class="text-uppercase text-center">
