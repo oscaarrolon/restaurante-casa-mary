@@ -2,46 +2,37 @@
 @media only screen and (max-width: 250px) {}
 
 /* For devices up to 480px width */
-@media only screen and (max-width: 480px) {
-
-
-    #my-image1,
-    #my-image2,
-    #my-image3 {
-        background-size: contain;
-        width: 80%;
-        height: 80%;
-        align-self: center;
-    }
-}
+@media only screen and (max-width: 480px) {}
 
 /* For devices up to 768px width */
 @media only screen and (max-width: 768px) {
 
-    .wrapper {
-        height: 90vh;
+    .images-parent {
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
     }
 
     .images {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
-        text-align: center;
+
+        grid-template-areas:
+            "one"
+            "two"
+            "three";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
-    #my-image1,
-    #my-image2,
-    #my-image3 {
-
-        width: 90%;
-        height: 100%;
-        align-self: center;
+    .one {
+        grid-area: one;
     }
 
-    .image1 {
-        background-image: url(../../../assets/images/restaurante9-mobile.jpg);
-        background-size: cover;
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
     }
 }
 

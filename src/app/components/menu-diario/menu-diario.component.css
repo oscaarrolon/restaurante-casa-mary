@@ -7,10 +7,27 @@
 .images {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; */
+    grid-template-areas:
+        "one two three";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-
 }
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+
 
 .one,
 .two,
@@ -29,54 +46,37 @@ a {
     font-weight: bold;
     text-decoration: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 1%;
-    margin-left: 11%;
+}
+
+.one a {
+    background-color: rgba(197, 99, 1, 0.5);
+    margin-left: 8%;
 
 }
 
+.two a {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 12.5%;
+
+}
+
+.three a {
+    background-color: rgba(197, 99, 1, 0.5);
+    margin-left: 10%;
+}
+
 img {
-    height: 50vh;
-    width: 90%;
-    object-fit: cover;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    max-width: 100%;
     transition: 1s;
 }
 
 img:hover {
     transform: scale(1.2);
 }
-
-/* 
-.image1 {
-    background-image: url(../../../assets/images/restaurante9.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 2%;
-    height: 50vh;
-    transition: 1s;
-}
-
-.image2 {
-    background-image: url(../../../assets/images/imagen2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 2%;
-    height: 50vh;
-    display: flex;
-}
-
-.image3 {
-    background-image: url(../../../assets/images/imagen3.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-    margin-top: 2%;
-    display: flex;
-    transition: 1s;
-} */
 
 .image1,
 .image2,
