@@ -1,33 +1,59 @@
-/* sets the height and background color of the wrapper */
-.wrapper {
-    height: 60vh;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* sets the height of the images parent container to 100% */
 .images-parent {
-    height: 100%;
-
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
 }
 
-/* sets the grid display and spacing for the images */
+
 .images {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 0px;
+
 }
 
-/* sets the background images for each image div */
+.one,
+.two,
+.three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: clamp(27px, 65%, 120px);
+    overflow: hidden;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    margin-left: 11%;
+
+}
+
+img {
+    height: 50vh;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+/* 
 .image1 {
     background-image: url(../../../assets/images/restaurante9.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 58vh;
     margin-top: 2%;
+    height: 50vh;
     transition: 1s;
 }
 
@@ -36,11 +62,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 58vh;
     margin-top: 2%;
-    transition: 1s;
-
-
+    height: 50vh;
+    display: flex;
 }
 
 .image3 {
@@ -48,54 +72,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 58vh;
+    height: 50vh;
     margin-top: 2%;
+    display: flex;
     transition: 1s;
+} */
 
-}
-
-
-
-/* sets animation rules for general entrance from different directions */
-.mostrarDesdeAbajo {
-    animation: mostrarDesdeAbajo 1s;
-}
-
-.mostrarDesdeDerecha {
-    animation: mostrarDesdeDerecha 1s;
-}
-
-.mostrarDesdeIzquierda {
-    animation: mostrarDesdeIzquierda 1s;
-}
-
-/* sets animation keys to specify the start and end transformations of the element */
-@keyframes mostrarDesdeAbajo {
-    0% {
-        transform: translateY(150px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes mostrarDesdeDerecha {
-    0% {
-        transform: translateX(150px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes mostrarDesdeIzquierda {
-    0% {
-        transform: translateX(-150px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+.image1,
+.image2,
+.image3:hover {
+    transform: scale(1.1);
 }

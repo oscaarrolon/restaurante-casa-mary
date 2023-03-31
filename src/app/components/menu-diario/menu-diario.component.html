@@ -1,15 +1,22 @@
-<div class="wrapper">
-    <div class="images-parent">
-        <div class="images">
-            <div class="image1" id="my-image1" [ngClass]="{'mostrarDesdeIzquierda': animado}"
-                [ngStyle]="{'opacity': opacity}" (window:scroll)="onScroll()">
+<div class="images-parent">
+    <div class="images">
+        <div class="one">
+            <div class="image1" id="my-image1">
+                <img src="../../../assets/images/restaurante9.jpeg" alt="">
             </div>
-            <div class="image2" id="my-image2" loading="lazy" [ngClass]="{'mostrarDesdeAbajo': animado}"
-                (window:scroll)="onScroll()" [ngStyle]="{'opacity': opacity}">
+            <a href="">Desayunos</a>
+        </div>
+        <div class="two">
+            <div class="image2" id="my-image2">
+                <img src="../../../assets/images/imagen2.jpeg" alt="">
             </div>
-            <div class="image3" id="my-image3" [ngClass]="{'mostrarDesdeDerecha': animado}" (window:scroll)="onScroll()"
-                [ngStyle]="{'opacity': opacity}">
+            <a href="">Vinos</a>
+        </div>
+        <div class="three">
+            <div class="image3" id="my-image3">
+                <img src="../../../assets/images/imagen3.jpeg" alt="">
             </div>
+            <a href="">Tapas / Carta</a>
         </div>
     </div>
 </div>

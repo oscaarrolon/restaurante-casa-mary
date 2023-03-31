@@ -26,7 +26,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
     }
 
@@ -37,6 +37,11 @@
         width: 90%;
         height: 100%;
         align-self: center;
+    }
+
+    .image1 {
+        background-image: url(../../../assets/images/restaurante9-mobile.jpg);
+        background-size: cover;
     }
 }
 
