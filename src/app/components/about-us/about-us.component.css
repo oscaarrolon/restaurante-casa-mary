@@ -1,8 +1,14 @@
-.aboutUs {
-    display: flex;
-    height: 90vh;
-    margin-top: 115vh;
+.content {
+    min-height: 70vh;
+    background-color: rgba(39, 43, 47, 0.9);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+
 }
+
+
 
 .content img {
     max-width: 50%;
@@ -10,11 +16,11 @@
 }
 
 .leftDiv {
-    background-color: rgba(39, 43, 47, 0.9);
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    justify-content: center;
 
 }
 
@@ -24,17 +30,17 @@
 
 .sobre {
     color: white;
-    margin-left: -40%;
+    margin-left: -12.5%;
 }
 
 .nosotros {
-    margin-top: -6%;
-    margin-left: 20%;
+    margin-top: -5%;
+    margin-left: 12.5%;
 }
 
 .rightDiv {
     color: white;
-    background-color: rgba(39, 43, 47, 0.9);
+    width: 100%;
 }
 
 .rightText {
@@ -45,9 +51,6 @@
     text-align: center;
 }
 
-.btn-leerMas {
-    margin-top: 10%;
-}
 
 button {
     cursor: pointer;

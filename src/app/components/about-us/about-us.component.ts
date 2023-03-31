@@ -15,7 +15,7 @@ export class AboutUsComponent {
 
   constructor(private renderer: Renderer2) {
     this.scrolled = 0
-    this.finalPosition = -100
+    this.finalPosition = 0
     this.display = "none"
     this.oculto = false
   }
@@ -25,7 +25,7 @@ export class AboutUsComponent {
   onScroll() {
     this.scrolled = window.scrollY;
     if (this.scrolled >= 600) {
-      this.finalPosition = 100;
+      this.finalPosition = 20;
     }
     else { this.finalPosition = -70 }
 
