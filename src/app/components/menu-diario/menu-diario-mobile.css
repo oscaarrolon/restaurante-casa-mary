@@ -14,7 +14,7 @@
     }
 
     .images {
-
+        width: 80vw;
         grid-template-areas:
             "one"
             "two"

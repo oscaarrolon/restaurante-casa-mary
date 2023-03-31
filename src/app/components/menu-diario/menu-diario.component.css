@@ -5,14 +5,16 @@
 
 
 .images {
+    max-width: 1400px;
+    min-width: 320px;
     height: 100%;
+    margin: auto;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; */
     grid-template-areas:
         "one two three";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+
 }
 
 .one {
