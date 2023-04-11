@@ -1,6 +1,7 @@
 .images-parent {
     height: 60vh;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+
 }
 
 
@@ -17,6 +18,17 @@
 
 }
 
+.animate__animated {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: .5s ease-in-out all;
+}
+
+.animate__animated.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .one {
     grid-area: one;
 }
@@ -29,43 +41,45 @@
     grid-area: three;
 }
 
-
-
 .one,
 .two,
 .three {
+    margin: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: clamp(27px, 65%, 120px);
     overflow: hidden;
+
 }
 
 a {
     color: white;
-    font-weight: bold;
+
     text-decoration: none;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     padding: 1%;
 }
 
 .one a {
-    background-color: rgba(197, 99, 1, 0.5);
-    margin-left: 8%;
+    left: 25%;
+    border: 3px solid white;
 
 }
 
 .two a {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-left: 12.5%;
+    left: 40%;
 
+    border: 3px solid white;
 }
 
 .three a {
-    background-color: rgba(197, 99, 1, 0.5);
-    margin-left: 10%;
+    left: 38%;
+    border: 3px solid white;
 }
 
 img {
@@ -84,4 +98,20 @@ img:hover {
 .image2,
 .image3:hover {
     transform: scale(1.1);
+}
+
+
+
+
+
+@keyframes animation1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import * as Rellax from 'rellax';
 
 @Component({
   selector: 'menu-diario',
@@ -6,33 +7,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-diario.component.css', './menu-diario-mobile.css']
 })
 export class MenuDiarioComponent implements OnInit {
-  scroll = 0;
-  animado = false;
-  opacity = 0;
-  elementIds = ['my-image1', 'my-image2', 'my-image3'];
-  scrollThresholds = [990, 1200, 90];
 
-  constructor() { }
+  @ViewChildren('animElements') public images!: QueryList<ElementRef>
 
-  ngOnInit() { }
-
-  onScroll() {
-    this.scroll = window.scrollY;
-    for (let i = 0; i < this.elementIds.length; i++) {
-      const elementId = this.elementIds[i];
-      const element = document.getElementById(elementId);
-      if (element) {
-        const elementOffset = element.offsetTop;
-        const elementHeight = element.offsetHeight;
-        const scrollThreshold = this.scrollThresholds[i];
-        if (this.scroll >= scrollThreshold) {
-          this.animado = true;
-          this.opacity = 1;
-        } else {
-          this.animado = false;
-          this.opacity = 0;
-        }
-      }
-    }
+  observer: IntersectionObserver | null = null;
+  constructor() {
   }
+  ngAfterViewInit() {
+    const observeElement = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          console.log(entry.target.className)
+        }
+        else entry.target.classList.remove('visible')
+        console.log(entry.target.className)
+      });
+    }
+    const observer = new IntersectionObserver(observeElement, {
+      root: null,
+      threshold: .5
+    })
+    this.images.forEach((img: any) => {
+      observer.observe(img.nativeElement)
+    })
+  }
+  ngOnInit() {
+
+  }
+
 }
