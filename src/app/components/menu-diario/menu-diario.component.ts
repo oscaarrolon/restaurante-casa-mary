@@ -18,10 +18,8 @@ export class MenuDiarioComponent implements OnInit {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          console.log(entry.target.className)
         }
         else entry.target.classList.remove('visible')
-        console.log(entry.target.className)
       });
     }
     const observer = new IntersectionObserver(observeElement, {
