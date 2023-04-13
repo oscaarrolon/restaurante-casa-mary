@@ -9,7 +9,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MenuDiarioComponent } from './components/menu-diario/menu-diario.component';
 import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,8 +24,6 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     AppRoutingModule,
     HttpClientModule,
     LazyLoadImageModule
-
-
   ],
   providers: [
 

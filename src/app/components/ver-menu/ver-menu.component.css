@@ -31,3 +31,14 @@
 .child h2 {
     font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        height: 80vh;
+    }
+
+    .child {
+        width: 70vw;
+        margin-top: 15%;
+    }
+}

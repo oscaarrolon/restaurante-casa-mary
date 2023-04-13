@@ -96,3 +96,24 @@ button:after {
 button:hover:after {
     width: 100%;
 }
+
+
+main {
+    display: grid;
+    grid-template-areas:
+        "aboutUS" "menuDiario" "verMenu";
+
+}
+
+.aboutUs {
+    grid-area: aboutUS;
+
+}
+
+.menuDiario {
+    grid-area: menuDiario;
+}
+
+.verMenu {
+    grid-area: verMenu;
+}
