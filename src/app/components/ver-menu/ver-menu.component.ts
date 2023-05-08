@@ -37,18 +37,18 @@ export class VerMenuComponent implements OnInit {
     }
 
   }
-
-
   ngOnInit(): void {
+    this.reviews.getPlaceDetails().subscribe({
+      next: (response) => {
+        console.log(response);
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    });
 
   }
 
-  traerDatos() {
-    this.reviews.getRestaurantData().subscribe(data => {
-      this.datos = data;
-    })
-    console.log(this.datos)
-
-  }
 
 }
+

@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -16,8 +16,15 @@ export class ReseñasService {
 
   constructor(private http: HttpClient) { }
 
-  getRestaurantData(): Observable<any> {
-    return this.http.get(this.url, { headers: this.headers });
+  getPlaceDetails(): Observable<any> {
+    const url = 'https://maps.googleapis.com/maps/api/place/details/json';
+    const params = new HttpParams()
+      .set('place_id', 'ChIJRXGAtUw3Yg0R_UXu9UlphO4')
+      .set('fields', 'name,rating,formatted_phone_number')
+      .set('reviews_sort', 'newest') // Aquí se agrega el parámetro "reviews_sort"
+      .set('key', 'AIzaSyCHy0SWFd9ute25ihYGbx2z2hqc2f5YKps'); // Reemplazar con tu propia clave de API de Google Places
+
+    return this.http.get(url, { params });
   }
 }
 

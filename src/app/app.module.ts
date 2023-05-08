@@ -10,6 +10,7 @@ import { MenuDiarioComponent } from './components/menu-diario/menu-diario.compon
 import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { HttpClient } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClient } from '@angular/common/http';
     AboutUsComponent,
     MenuDiarioComponent,
     VerMenuComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

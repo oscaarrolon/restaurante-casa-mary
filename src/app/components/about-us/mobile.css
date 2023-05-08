@@ -6,11 +6,12 @@
 @media only screen and (max-width: 768px) {
 
     .content {
-        height: 130vh;
+        height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-areas:
+        grid-template:
+            "leftDiv"
             "rightDiv"
-            "leftDiv";
+            "btn-leerMas";
         gap: 10px;
 
     }
@@ -28,8 +29,16 @@
         display: none;
     }
 
+    .btn-leerMas {
+        grid-area: btn-leerMas;
+    }
+
+    .leftDiv {
+        grid-area: leftDiv;
+    }
+
     .rightDiv {
-        grid-area: "rightDiv";
+        grid-area: rightDiv;
 
     }
 }

@@ -1,0 +1,95 @@
+.main {
+    max-width: 1256px;
+    height: 80vh;
+    background-color: rgb(58, 58, 58);
+}
+
+.container {
+    display: grid;
+    grid-template:
+        "img   direccion horario"
+        "links  direccion horario";
+    justify-content: space-around;
+    gap: 30px;
+    color: white;
+    max-width: 900px;
+
+}
+
+.img {
+    margin-top: 20%;
+    grid-area: img;
+}
+
+.links {
+    grid-area: links;
+}
+
+.links ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.links ul li:hover {
+    color: #E19B3C;
+    ;
+}
+
+.direccion {
+    margin-top: 60%;
+    grid-area: direccion;
+    text-align: center;
+}
+
+.horario {
+    margin-top: 60%;
+    grid-area: horario;
+    text-align: right;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        height: 110vh;
+    }
+
+    .container {
+        gap: 5px;
+        grid-template:
+            "img"
+            "links"
+            "direccion"
+            "horario";
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: clamp(8px, 70%, 90px);
+    }
+
+    .img {
+        margin-top: 30%;
+    }
+
+    .direccion {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .horario {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+}

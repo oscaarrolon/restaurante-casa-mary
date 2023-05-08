@@ -44,6 +44,7 @@ img {
 }
 
 .text {
+    margin-top: 5%;
     width: 50%;
     font-family: var(--primary-font);
     font-weight: lighter;
@@ -54,16 +55,7 @@ img {
     font-size: clamp(13px, 40%, 90px);
 }
 
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-}
-
 button {
-
     color: #E19B3C;
     padding: 5px 10px;
     font-weight: bold;
@@ -74,35 +66,22 @@ button {
     outline: none;
     border-radius: 5px;
     z-index: 0;
-    background: #E19B3C;
     overflow: hidden;
     border: 2px solid #E19B3C;
-    color: black;
     font-size: clamp(10px, 40%, 90px);
 }
 
-button:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: #fff;
-}
-
-button:hover:after {
+button:hover {
     width: 100%;
+    background-color: #E19B3C;
 }
-
 
 main {
     display: grid;
     grid-template-areas:
-        "aboutUS" "menuDiario" "verMenu";
-
+        "aboutUS"
+        "menuDiario"
+        "verMenu";
 }
 
 .aboutUs {
@@ -116,4 +95,10 @@ main {
 
 .verMenu {
     grid-area: verMenu;
+}
+
+
+.footer {
+    width: 100%;
+    display: inline-block;
 }
