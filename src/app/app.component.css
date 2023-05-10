@@ -55,6 +55,11 @@ img {
     font-size: clamp(13px, 40%, 90px);
 }
 
+.buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 button {
@@ -77,6 +82,8 @@ button:hover {
     color: white;
     background-color: #E19B3C;
 }
+
+
 
 main {
     display: grid;
