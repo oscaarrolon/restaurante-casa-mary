@@ -15,7 +15,13 @@
     justify-content: center;
     text-align: center;
     font-size: clamp(15px, 70%, 90px);
+    transform: scale(0.9);
+    transition: .5s ease-in-out all;
+}
 
+.container.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .img {

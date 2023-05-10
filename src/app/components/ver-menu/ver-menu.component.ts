@@ -25,11 +25,9 @@ export class VerMenuComponent implements OnInit {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            console.log(entry.target.className);
           } else {
             entry.target.classList.remove('visible');
           }
-          console.log(entry.target.className);
         });
       }, { root: null, threshold: 0.5 });
 
