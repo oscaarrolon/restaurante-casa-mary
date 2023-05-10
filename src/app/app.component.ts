@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   scrolled: number
   oculto: boolean
   title = 'front';
+  console = "console"
 
   constructor() {
     this.scrolled = 0
@@ -30,7 +31,10 @@ export class AppComponent implements OnInit {
       this.oculto = true
     }
     else { this.oculto = false }
+  }
 
+  consoleLog() {
+    return console.log("funsionnaanana")
   }
 
 }
