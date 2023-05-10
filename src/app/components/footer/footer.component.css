@@ -2,17 +2,19 @@
     max-width: 1256px;
     height: 80vh;
     background-color: rgb(58, 58, 58);
+
 }
 
 .container {
     display: grid;
     grid-template:
-        "img   direccion horario"
-        "links  direccion horario";
-    justify-content: space-around;
-    gap: 30px;
+        "links img horario" 400px "links direccion horario" 400px / 300px 300px 300px;
     color: white;
-    max-width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(15px, 70%, 90px);
 
 }
 
@@ -23,6 +25,10 @@
 
 .links {
     grid-area: links;
+    margin-top: 50%;
+    line-height: 220%;
+    text-align: left;
+    cursor: pointer;
 }
 
 .links ul li {
@@ -36,20 +42,26 @@
 }
 
 .direccion {
-    margin-top: 60%;
+    margin-top: -30%;
     grid-area: direccion;
     text-align: center;
 }
 
 .horario {
-    margin-top: 60%;
+    margin-top: 50%;
     grid-area: horario;
     text-align: right;
+    line-height: 100%;
+    font-size: clamp();
 }
 
 img {
     width: 200px;
     height: 150px;
+}
+
+.container .direccion {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -67,7 +79,6 @@ img {
         justify-content: center;
         text-align: center;
         color: white;
-        font-size: clamp(8px, 70%, 90px);
     }
 
     .img {
