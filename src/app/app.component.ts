@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
   onScrollButton() {
     this.scrolled = window.scrollY;
-    if (this.scrolled >= 500) {
+    if (this.scrolled >= 200) {
       this.oculto = true
     }
     else { this.oculto = false }
