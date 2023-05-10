@@ -94,6 +94,7 @@ main {
 }
 
 .aboutUs {
+    margin-top: 10%;
     grid-area: aboutUS;
 
 }
