@@ -11,6 +11,7 @@ import { VerMenuComponent } from './components/ver-menu/ver-menu.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { CartaComponent } from './components/carta/carta.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MenuDiarioComponent,
     VerMenuComponent,
     FooterComponent,
+    CartaComponent,
   ],
   imports: [
     BrowserModule,

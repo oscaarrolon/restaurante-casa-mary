@@ -10,6 +10,8 @@ export class MainPageComponent implements OnInit {
   video: any
   scrolled: number
   oculto: boolean
+  title = 'front';
+  console = "console"
 
   constructor() {
     this.scrolled = 0
@@ -26,11 +28,15 @@ export class MainPageComponent implements OnInit {
 
   onScrollButton() {
     this.scrolled = window.scrollY;
-    if (this.scrolled >= 500) {
+    if (this.scrolled >= 100) {
       this.oculto = true
     }
     else { this.oculto = false }
-
   }
+
+  consoleLog() {
+    return console.log("funsionnaanana")
+  }
+
 
 }
