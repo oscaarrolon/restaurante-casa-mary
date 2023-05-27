@@ -83,7 +83,10 @@ button:hover {
     background-color: #E19B3C;
 }
 
-
+button a {
+    text-decoration: none;
+    color: #E19B3C;
+}
 
 main {
     display: grid;

@@ -1,7 +1,7 @@
 <app-loader *ngIf="isLoading"></app-loader>
 
 <div class="container" *ngIf="!isLoading">
-    <div class="logo">
+    <div routerLink="src/app/components/main-page/main-page.component.html" class="logo">
         <img src="../../../assets/images/logo-casaMary(1).png" alt="">
     </div>
 
@@ -21,14 +21,20 @@
         </div>
 
         <section class="entrantes" id="entrantes">
-            <h2>{{value}}</h2>
-            <div *ngFor="let plato of platos[value]?.platos | keyvalue">
-                <div class="nombre">
-                    <p> {{plato.key}}</p>
+            <div class="titulo">
+                <h2>{{value}}</h2>
+            </div>
+
+            <div class="carta" *ngFor="let plato of platos[value]?.platos | keyvalue">
+                <div class="platos animate__animated animate__fadeInLeft">
+                    <div class="nombre">
+                        <p>{{plato.key}}</p>
+                    </div>
+                    <div class="precio">
+                        <p> {{plato.value}}€</p>
+                    </div>
                 </div>
-                <div class="precio">
-                    <p> {{plato.value}}€</p>
-                </div>
+
             </div>
         </section>
     </main>
