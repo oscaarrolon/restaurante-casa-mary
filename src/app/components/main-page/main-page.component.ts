@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
@@ -7,22 +7,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  video: any
+  @ViewChild('video', { static: false }) video: ElementRef
+
+
   scrolled: number
   oculto: boolean
   title = 'front';
   console = "console"
+  isLoading: boolean
 
   constructor() {
     this.scrolled = 0
     this.oculto = false
+    this.isLoading = true
+    this.video = new ElementRef(null);
   }
 
   ngOnInit(): void {
-    this.video = document.getElementById('myVideo');
-    this.video.muted = true;
-    this.video.autoplay = true;
-    this.video.loop = true;
+    setTimeout(() => {
+      this.isLoading = false
+      console.log(this.isLoading)
+    }, 4600);
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+
+      this.video.nativeElement.muted = true;
+      this.video.nativeElement.autoplay = true;
+      this.video.nativeElement.loop = true;
+    }, 5000);
+
 
   }
 
@@ -33,10 +48,5 @@ export class MainPageComponent implements OnInit {
     }
     else { this.oculto = false }
   }
-
-  consoleLog() {
-    return console.log("funsionnaanana")
-  }
-
 
 }

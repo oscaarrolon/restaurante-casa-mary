@@ -7,45 +7,22 @@ import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angu
 })
 export class AboutUsComponent {
 
-  scrolled: number
-  finalPosition: number
-  display: string
-  oculto: boolean
+  @ViewChild('animElement') public animElement!: ElementRef<any>
+  observer: IntersectionObserver | null = null;
 
 
-  constructor(private renderer: Renderer2) {
-    this.scrolled = 0
-    this.finalPosition = 0
-    this.display = "none"
-    this.oculto = false
-  }
-
-
-
-  onScroll() {
-    this.scrolled = window.scrollY;
-    if (this.scrolled >= 600) {
-      this.finalPosition = 20;
-    }
-    else { this.finalPosition = -70 }
+  constructor() {
 
   }
 
-  onScrollButton() {
-    this.scrolled = window.scrollY;
-    if (this.scrolled >= 600) {
-      this.display = ""
+
+
+  ngAfterviweInit() {
+
+    if (this.animElement && this.animElement.nativeElement) {
+      this.observer = new IntersectionObserver((entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+
+      })
     }
-    else { this.display = "none" }
-
-  }
-
-  onScrollRightImage() {
-    this.scrolled = window.scrollY;
-    if (this.scrolled >= 600) {
-      this.oculto = true
-    }
-    else { this.oculto = false }
-
   }
 }

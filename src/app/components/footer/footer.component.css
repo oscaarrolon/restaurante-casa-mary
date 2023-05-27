@@ -1,7 +1,7 @@
 .main {
     max-width: 1256px;
     height: 80vh;
-    background-color: rgb(58, 58, 58);
+    background-color: rgba(58, 58, 58, .9);
 
 }
 
@@ -33,24 +33,41 @@
     grid-area: links;
     margin-top: 50%;
     line-height: 220%;
-    text-align: left;
     cursor: pointer;
+
 }
 
 .links ul li {
     list-style: none;
     cursor: pointer;
+    text-align: left;
 }
 
 .links ul li:hover {
     color: #E19B3C;
-    ;
+
+}
+
+.links ul li svg {
+    fill: white;
+    margin-right: 40px;
+}
+
+.icons {
+    display: flex;
 }
 
 .direccion {
-    margin-top: -30%;
+    margin-top: -20%;
     grid-area: direccion;
     text-align: center;
+
+}
+
+.direccion p a {
+    text-decoration: none;
+    color: white;
+
 }
 
 .horario {
@@ -82,31 +99,48 @@ img {
             "links"
             "direccion"
             "horario";
-        justify-content: center;
-        text-align: center;
         color: white;
     }
 
-    .img {
-        margin-top: 30%;
-    }
-
     .direccion {
-        margin-top: 10%;
+        margin-top: 5%;
+        justify-content: center;
         text-align: center;
     }
 
     .horario {
         margin-top: 5%;
+        justify-content: center;
         text-align: center;
+
     }
 
     .links {
+        margin-top: 5%;
+        justify-content: center;
         text-align: center;
+        margin-right: 25px;
+
+    }
+
+    .links ul li {
+
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: space-around;
+        margin-left: 35px;
+
     }
 
     img {
         width: 150px;
         height: 100px;
+    }
+
+    .img {
+        margin-top: 2%;
+        justify-content: center;
     }
 }

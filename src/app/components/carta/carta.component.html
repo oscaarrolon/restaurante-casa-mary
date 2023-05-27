@@ -1,74 +1,35 @@
-<div class="container">
+<app-loader *ngIf="isLoading"></app-loader>
+
+<div class="container" *ngIf="!isLoading">
+    <div class="logo">
+        <img src="../../../assets/images/logo-casaMary(1).png" alt="">
+    </div>
+
     <main>
         <div class="menu">
-            <a (click)="scrollToElement('entrantes')">Entrantes</a>
-            <a (click)="scrollToElement('ensaladas')">Entrantes</a>
-
-            <a (click)="scrollToElement('bocadillos')">Entrantes</a>
-            <a (click)="scrollToElement('tapas')">TAPAS</a>
-            <a (click)="scrollToElement('catalanas')">CATALANAS</a>
-            <a (click)="scrollToElement('carnes')">CARNES</a>
-            <a (click)="scrollToElement('pescados')">PESCADOS</a>
-            <a (click)="scrollToElement('revueltos')">REVUELTOS </a>
-            <a (click)="scrollToElement('sugerencias')">SUGERENCIAS</a>
-            <a (click)="scrollToElement('sopas')">SOPAS</a>
-            <a (click)="scrollToElement('combinados')">COMBINADOS</a>
+            <a [ngClass]="{'active': active === 'ENTRANTES'}" (click)="clickVal('ENTRANTES')">ENTRANTES</a>
+            <a [ngClass]="{'active': active === 'ENSALADAS'}" (click)="clickVal('ENSALADAS')">ENSALADAS</a>
+            <a [ngClass]="{'active': active === 'BOCADILLOS'}" (click)="clickVal('BOCADILLOS')">BOCADILLOS</a>
+            <a [ngClass]="{'active': active === 'TAPAS'}" (click)="clickVal('TAPAS')">TAPAS</a>
+            <a [ngClass]="{'active': active === 'CATALANAS'}" (click)="clickVal('CATALANAS')">CATALANAS</a>
+            <a [ngClass]="{'active': active === 'CARNES'}" (click)="clickVal('CARNES')">CARNES</a>
+            <a [ngClass]="{'active': active === 'PESCADOS'}" (click)="clickVal('PESCADOS')">PESCADOS</a>
+            <a [ngClass]="{'active': active === 'REVUELTOS'}" (click)="clickVal('REVUELTOS')">REVUELTOS</a>
+            <a [ngClass]="{'active': active === 'SUGERENCIAS'}" (click)="clickVal('SUGERENCIAS')">SUGERENCIAS</a>
+            <a [ngClass]="{'active': active === 'SOPAS'}" (click)="clickVal('SOPAS')">SOPAS</a>
+            <a [ngClass]="{'active': active === 'COMBINADOS'}" (click)="clickVal('COMBINADOS')">COMBINADOS</a>
         </div>
 
         <section class="entrantes" id="entrantes">
-            <h2>ENTRANTES</h2>
-
-
+            <h2>{{value}}</h2>
+            <div *ngFor="let plato of platos[value]?.platos | keyvalue">
+                <div class="nombre">
+                    <p> {{plato.key}}</p>
+                </div>
+                <div class="precio">
+                    <p> {{plato.value}}€</p>
+                </div>
+            </div>
         </section>
-
-        <section class="ensaladas" id="ensaladas">
-            <h2>ENSALADAS</h2>
-
-
-        </section>
-
-        <section class="bocadillos" id="bocadillos">
-
-
-        </section>
-
-        <section class="tapas" id="tapas">
-
-
-        </section>
-
-        <section class="catalanas" id="catalanas">
-
-
-        </section>
-
-        <section class="carnes" id="carnes">
-
-
-        </section>
-
-        <section class="pescados" id="pescados">
-
-        </section>
-
-        <section class="revueltos" id="revueltos">
-
-        </section>
-
-        <section class="sugerencias" id="sugerencias">
-
-        </section>
-
-
-        <section class="sopas" id="sopas">
-
-        </section>
-
-        <section class="combinados" id="combinados">
-
-
-        </section>
-
-
     </main>
 </div>

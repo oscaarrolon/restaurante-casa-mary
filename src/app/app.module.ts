@@ -12,6 +12,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartaComponent } from './components/carta/carta.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CartaComponent } from './components/carta/carta.component';
     VerMenuComponent,
     FooterComponent,
     CartaComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,

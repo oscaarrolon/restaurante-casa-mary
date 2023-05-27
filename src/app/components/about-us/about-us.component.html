@@ -1,5 +1,5 @@
 <div class="aboutUs">
-    <div class="content">
+    <div class="content" #animElement>
         <div class="rightDiv">
             <div class="rightImage text-center">
                 <img loading="lazy" src="../../../assets/images/dueños.png" alt="" class="img-fluid">
@@ -19,13 +19,13 @@
             <div class="leftImage">
                 <img loading="lazy" src="../../../assets/images/foto-cuchara-SOLO.png" alt="">
             </div>
-            <div [ngClass]="{'oculto': oculto}" (window:scroll)="onScrollButton()">
+            <div>
                 <h2 class="text-uppercase text-center">
                     <p class="text-black sobre">SOBRE</p>
                     <p class="text-warning text-right nosotros">NOSOTROS</p>
                 </h2>
             </div>
-            <a href="https://oscars-burguer.resos.com/booking"><button class="btn btn-primary">Reservar</button>
+            <a href="tel: +34966041483"><button class="btn btn-primary">Reservar</button>
             </a>
         </div>
 

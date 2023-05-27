@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<div class="container">
+<app-loader *ngIf="isLoading"></app-loader>
+<div class="container" *ngIf="!isLoading">
     <div class="row">
         <div>
             <div class="video">
-                <video id="myVideo">
+                <video lazyLoad="lazyLoad" id="myVideo" #video>
                     <source src="../../../assets/videos/Video-restaurante2.mp4" type="video/mp4">
                 </video>
             </div>
@@ -22,9 +23,9 @@
                     </p>
                 </div>
                 <div class="buttons">
-                    <button class="carta">CARTA</button>
+                    <button class="carta" routerLink="/carta">CARTA</button>
                     <button class="menu-diario">MENÚ DIARIO</button>
-                    <button class="reserva">RESERVA</button>
+                    <button class="reserva"><a href="tel: +34966041483"></a>RESERVA</button>
                 </div>
             </div>
 
