@@ -10,9 +10,8 @@
         grid-template-columns: 1fr;
         grid-template:
             "leftDiv"
-            "rightDiv"
-            "btn-leerMas";
-        gap: 10px;
+            "rightDiv";
+
 
     }
 

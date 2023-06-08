@@ -3,7 +3,7 @@
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 0.7fr);
+    grid-template-rows: repeat(3, 0.7fr);
     min-width: 100%;
 }
 
@@ -23,7 +23,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,14 +91,14 @@ button a {
 main {
     display: grid;
     grid-template-areas:
-        "aboutUS"
+        "aboutUs"
         "menuDiario"
         "verMenu";
 }
 
 .aboutUs {
     margin-top: 10%;
-    grid-area: aboutUS;
+    grid-area: aboutUs;
 
 }
 
@@ -111,10 +111,10 @@ main {
 }
 
 
-.footer {
+footer {
     width: 100%;
-    display: inline-block;
 }
+
 
 @media only screen and (max-width: 768px) {
 
