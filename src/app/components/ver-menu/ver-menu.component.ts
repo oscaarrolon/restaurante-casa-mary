@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ReseñasService } from '../services/reseñas.service';
+declare var google: any;
 
 @Component({
   selector: 'app-ver-menu',
@@ -7,10 +8,9 @@ import { ReseñasService } from '../services/reseñas.service';
   styleUrls: ['./ver-menu.component.css']
 })
 export class VerMenuComponent implements OnInit {
-
   @ViewChild('reseña') public reseñas!: ElementRef<any>
   observer: IntersectionObserver | null = null;
-
+  google: any
   datos: any[]
 
   constructor(private reviews: ReseñasService) {
@@ -20,6 +20,9 @@ export class VerMenuComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+
+
+
     if (this.reseñas && this.reseñas.nativeElement) {
       this.observer = new IntersectionObserver((entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
         entries.forEach(entry => {
@@ -36,17 +39,9 @@ export class VerMenuComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.reviews.getPlaceDetails().subscribe({
-      next: (response) => {
-        console.log(response);
-      },
-      error: (error) => {
-        console.log(error);
-      }
-    });
-
   }
 
-
 }
+
+
 
