@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartaComponent } from './components/carta/carta.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { MenuDiaComponent } from './components/menu-dia/menu-dia.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     FooterComponent,
     CartaComponent,
     LoaderComponent,
+    MenuDiaComponent,
   ],
   imports: [
     BrowserModule,

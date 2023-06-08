@@ -13,10 +13,12 @@ export class MainPageComponent implements OnInit {
   scrolled: number
   oculto: boolean
   title = 'front';
-  console = "console"
   isLoading: boolean
+  today = new Date()
+
 
   constructor() {
+
     this.scrolled = 0
     this.oculto = false
     this.isLoading = true
@@ -28,6 +30,8 @@ export class MainPageComponent implements OnInit {
       this.isLoading = false
       console.log(this.isLoading)
     }, 4600);
+
+    console.log(this.today.getDay())
   }
 
   ngAfterViewInit(): void {
@@ -48,5 +52,6 @@ export class MainPageComponent implements OnInit {
     }
     else { this.oculto = false }
   }
+
 
 }
