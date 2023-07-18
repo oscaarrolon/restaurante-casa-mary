@@ -33,6 +33,11 @@ img {
     width: 30%;
 }
 
+.logo img {
+    margin-top: 20%;
+    width: 50%;
+    height: 30%;
+}
 
 
 .entrantes {

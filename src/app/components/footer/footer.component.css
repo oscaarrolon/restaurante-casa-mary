@@ -14,7 +14,7 @@
     margin: 0 auto;
     justify-content: center;
     text-align: center;
-    font-size: clamp(15px, 70%, 90px);
+    font-size: clamp(12px, 70%, 90px);
     transform: scale(0.9);
     transition: .5s ease-in-out all;
 }
@@ -41,20 +41,30 @@
     list-style: none;
     cursor: pointer;
     text-align: left;
+    text-decoration: none;
 }
 
-.links ul li:hover {
-    color: #E19B3C;
 
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.links ul li a:hover {
+    color: #E19B3C;
 }
 
 .links ul li svg {
+    margin-top: 5%;
     fill: white;
     margin-right: 40px;
 }
 
 .icons {
     display: flex;
+    margin-top: 5%;
 }
 
 .direccion {
@@ -89,7 +99,7 @@ img {
 
 @media only screen and (max-width: 768px) {
     .main {
-        height: 87vh;
+        height: 100vh;
     }
 
     .container {

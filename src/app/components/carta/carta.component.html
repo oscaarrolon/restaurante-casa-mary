@@ -20,6 +20,11 @@
             <a [ngClass]="{'active': active === 'COMBINADOS'}" (click)="clickVal('COMBINADOS')">COMBINADOS</a>
         </div>
 
+        <div class="logo" *ngIf="value === ''">
+            <img src="../../../assets/images/logo-casaMary(1).png" alt="">
+        </div>
+
+
         <section class="entrantes" id="entrantes">
             <div class="titulo">
                 <h2>{{value}}</h2>

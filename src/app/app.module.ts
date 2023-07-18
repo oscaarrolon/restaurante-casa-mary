@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CartaComponent } from './components/carta/carta.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { MenuDiaComponent } from './components/menu-dia/menu-dia.component';
+import { VinosComponent } from './components/vinos/vinos.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MenuDiaComponent } from './components/menu-dia/menu-dia.component';
     CartaComponent,
     LoaderComponent,
     MenuDiaComponent,
+    VinosComponent,
   ],
   imports: [
     BrowserModule,

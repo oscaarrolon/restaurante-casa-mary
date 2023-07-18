@@ -45,7 +45,7 @@ export class CartaComponent implements OnInit {
     this.value = value
     console.log(this.value)
     this.loadJsonData(this.value);
-    
+
     this.active = this.value
   }
 
