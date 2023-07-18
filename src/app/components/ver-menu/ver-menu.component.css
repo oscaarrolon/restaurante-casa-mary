@@ -1,6 +1,6 @@
 .wrapper {
-    height: 40vh;
-    background-color: white;
+    height: 45vh;
+    background-color: black;
 }
 
 .wrapper-child {
@@ -12,7 +12,7 @@
 
 .child {
     width: 60vw;
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +21,7 @@
     transform: scale(0.9);
     transition: .5s ease-in-out all;
     font-family: var(--secondary-font);
+    color: aliceblue
 }
 
 .child.visible {
@@ -30,6 +31,12 @@
 
 .child h2 {
     font-weight: bold;
+
+}
+
+.child hr {
+    color: white;
+    width: 100px;
 }
 
 @media only screen and (max-width: 768px) {

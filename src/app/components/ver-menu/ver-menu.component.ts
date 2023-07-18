@@ -12,9 +12,10 @@ export class VerMenuComponent implements OnInit {
   observer: IntersectionObserver | null = null;
   google: any
   datos: any[]
+  coments: string
 
   constructor(private reviews: ReseñasService) {
-
+    this.coments = 'review1'
     this.datos = []
 
   }
@@ -39,7 +40,32 @@ export class VerMenuComponent implements OnInit {
 
   }
   ngOnInit(): void {
+    const cycle = () => {
+      setTimeout(() => {
+        this.coments = 'review2';
+      }, 10000);
+
+      setTimeout(() => {
+        this.coments = 'review3';
+      }, 20000);
+
+      setTimeout(() => {
+        this.coments = 'review1';
+      }, 30000);
+    };
+
+    cycle();
+
+    setInterval(cycle, 30000);
   }
+
+
+
+
+
+
+
+
 
 }
 
