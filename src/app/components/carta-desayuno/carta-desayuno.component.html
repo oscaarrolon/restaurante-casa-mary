@@ -1,0 +1,66 @@
+<app-loader *ngIf="isLoading"></app-loader>
+
+
+<div class="container" *ngIf="!isLoading">
+    <div routerLink="src/app/components/main-page/main-page.component.html" class="logo">
+        <img src="../../../assets/images/logo-casaMary(1).png" alt="">
+    </div>
+
+    <main>
+
+        <section class="entrantes" id="entrantes">
+            <div class="titulo">
+                <h2>DESAYUNOS</h2>
+            </div>
+
+
+            <div class="platos animate__animated animate__fadeInLeft">
+                <div class="nombre">
+                    <p>1/2 BOCADILLO
+                        (LOMO, SALCHICHA, PECHUGA, JAMON, JAMÓN YORK, TORITILLA) + BEBIDA Y CAFÉ</p>
+                </div>
+                <div class="precio">
+                    <p> 4,5€</p>
+                </div>
+            </div>
+
+            <div class="platos animate__animated animate__fadeInLeft">
+                <div class="nombre">
+                    <p>1 BOCADILLO + BEBIDA Y CAFÉ</p>
+                </div>
+                <div class="precio">
+                    <p> 6,5€</p>
+                </div>
+            </div>
+
+            <div class="platos animate__animated animate__fadeInLeft">
+                <div class="nombre">
+                    <p>1/2 TOSTADA (ACEITE, TOMATE ) Y CAFÉ </p>
+                </div>
+                <div class="precio">
+                    <p> 2,2€</p>
+                </div>
+            </div>
+
+            <div class="platos animate__animated animate__fadeInLeft">
+                <div class="nombre">
+                    <p>1/2 TOSTADA (MERMELADA Y MANTEQUILLA)</p>
+                </div>
+                <div class="precio">
+                    <p> 2,4€</p>
+                </div>
+            </div>
+
+            <div class="platos animate__animated animate__fadeInLeft">
+                <div class="nombre">
+                    <p>1/2 TOSTADA, CAFÉ Y ZUMO DE NARANJA NATURAL</p>
+                </div>
+                <div class="precio">
+                    <p> 3,80€</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+</div>

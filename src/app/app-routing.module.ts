@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { CartaComponent } from './components/carta/carta.component';
 import { MenuDiaComponent } from './components/menu-dia/menu-dia.component';
+import { CartaDesayunoComponent } from './components/carta-desayuno/carta-desayuno.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: MainPageComponent },
   { path: 'carta', component: CartaComponent },
   { path: 'menu-dia', component: MenuDiaComponent },
+  { path: 'cartaDesayuno', component: CartaDesayunoComponent },
   { path: '**', redirectTo: 'home' }
 ];
 
