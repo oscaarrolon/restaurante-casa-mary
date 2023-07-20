@@ -2,13 +2,13 @@
     max-width: 1256px;
     height: 80vh;
     background-color: rgba(58, 58, 58, .9);
-
+    overflow: hidden;
 }
 
 .container {
     display: grid;
     grid-template:
-        "links img horario" 400px "links direccion horario" 400px / 300px 300px 300px;
+        "links img horario" 100px "links direccion horario" 100px / 300px 300px 300px;
     color: white;
     max-width: 1000px;
     margin: 0 auto;
@@ -99,7 +99,8 @@ img {
 
 @media only screen and (max-width: 768px) {
     .main {
-        height: 100vh;
+        height: 80vh;
+        overflow: hidden;
     }
 
     .container {
