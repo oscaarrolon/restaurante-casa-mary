@@ -8,7 +8,7 @@
 .container {
     display: grid;
     grid-template:
-        "links img horario" 100px "links direccion horario" 100px / 300px 300px 300px;
+        "links img horario" 300px "links direccion horario" 100px / 300px 300px 300px;
     color: white;
     max-width: 1000px;
     margin: 0 auto;

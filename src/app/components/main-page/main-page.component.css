@@ -3,7 +3,7 @@
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 0.7fr);
+    grid-template-rows: repeat(3, auto);
     min-width: 100%;
 }
 
@@ -96,11 +96,13 @@ button a {
 }
 
 main {
+    margin-top: 55%;
     display: grid;
-    grid-template-areas:
+    grid-template:
         "aboutUs"
         "menuDiario"
         "verMenu";
+
 }
 
 .aboutUs {
@@ -125,6 +127,10 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    main {
+        margin-top: 220%;
+    }
+
     .buttons {
         display: flex;
         flex-direction: column;
@@ -138,5 +144,4 @@ footer {
         margin-top: 5%;
         margin-bottom: 5%;
     }
-
 }
