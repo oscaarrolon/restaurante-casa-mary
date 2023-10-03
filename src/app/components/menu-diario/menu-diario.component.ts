@@ -10,7 +10,6 @@ export class MenuDiarioComponent implements OnInit {
 
   @ViewChildren('animElements') public images!: QueryList<ElementRef>
 
-  observer: IntersectionObserver | null = null;
   constructor() {
   }
   ngAfterViewInit() {

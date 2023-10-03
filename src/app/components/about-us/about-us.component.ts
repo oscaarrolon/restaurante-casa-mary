@@ -10,13 +10,8 @@ export class AboutUsComponent {
   @ViewChild('animElement') public animElement!: ElementRef<any>
   observer: IntersectionObserver | null = null;
 
-
   constructor() {
-
   }
-
-
-
   ngAfterviweInit() {
 
     if (this.animElement && this.animElement.nativeElement) {
